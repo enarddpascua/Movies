@@ -1,0 +1,114 @@
+$textGreen: rgb(109, 184, 109);
+
+@mixin details {
+  margin: 0;
+  align-self: flex-start;
+  justify-self: left;
+}
+.rootContainer {
+  background-color: black;
+  margin-top: 10px;
+}
+
+.clickedMovContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 3fr);
+  grid-template-rows: repeat(2, 1fr);
+  color: $textGreen;
+
+  img {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: center;
+    margin-top: 10px;
+  }
+}
+
+.detailscontainer {
+  grid-column: 4/6;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-rows: (4, 1fr);
+  margin-left: 30px;
+
+  .modalContainer {
+    margin-top: 10px;
+    position: absolute;
+    height: 49vh;
+    width: 40vw;
+    background-color: whitesmoke;
+    color: black;
+    opacity: 1;
+    transition: 1s ease;
+    .formContainer {
+      margin-top: 5px;
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+      justify-self: center;
+      row-gap: 5px;
+
+      label {
+        margin-left: 5px;
+        input {
+          width: 30vw;
+          margin-left: 5px;
+        }
+      }
+      .formSynopsis {
+        display: flex;
+        textarea {
+          position: relative;
+          height: 20vh;
+          width: 30vw;
+        }
+      }
+    }
+    .updateBtn {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  h1 {
+    align-self: flex-end;
+    margin: 0;
+  }
+  h5 {
+    @include details;
+    font-style: italic;
+  }
+  h4 {
+    @include details;
+  }
+  h3 {
+    @include details;
+  }
+}
+.plot {
+  grid-column: 3/5;
+  margin-top: 10px;
+}
+.backContainer {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  button {
+    margin-top: 10px;
+  }
+}
+
+.adminBtn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 10px;
+  .semantic.ui.red.button {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  .semantic.ui.green.button {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  height: 100%;
+  background-size: cover;
+}
+
+.mainContainer {
+  padding: 5px;
+  margin-top: 10px;
+  background-color: black;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 5px;
+}
+
+.mainContainer div {
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.mainContainer img {
+  width: 300px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 500px;
+  padding: 5px;
+}
+
+.mainContainer div:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.mainContainer p {
+  color: #6db86d;
+  width: 170px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=home.css.map */

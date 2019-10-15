@@ -1,0 +1,63 @@
+$textGreen: rgb(109, 184, 109);
+
+.headBar {
+  top: 0;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: whitesmoke;
+
+  img {
+    width: 150px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  select {
+    width: 130px;
+  }
+
+  p {
+    color: $textGreen;
+  }
+}
+
+.searchContainer {
+  display: grid;
+  width: 50%;
+  height: 100px;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 5px;
+  input {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    font-size: 20px;
+  }
+  a {
+    width: 50px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .searchBtn {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
+
+.nameContainer {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  .nameLoc {
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
+    color: $textGreen;
+  }
+  .btnLogout {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}

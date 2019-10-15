@@ -1,0 +1,43 @@
+$textGreen: rgb(109, 184, 109);
+@mixin center-things {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 100%;
+  background-size: cover;
+}
+
+.mainContainer {
+  padding: 5px;
+  margin-top: 10px;
+  background-color: black;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 5px;
+
+  div {
+    transition: transform 0.1s;
+    justify-self: center;
+    align-self: center;
+  }
+  img {
+    width: 300px;
+    justify-self: center;
+    align-self: center;
+    height: 500px;
+    padding: 5px;
+  }
+
+  div:hover {
+    transform: scale(0.97);
+  }
+  p {
+    color: $textGreen;
+    width: 170px;
+    margin: 0 auto;
+  }
+}

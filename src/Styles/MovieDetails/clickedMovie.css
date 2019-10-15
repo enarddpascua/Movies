@@ -1,0 +1,175 @@
+.rootContainer {
+  background-color: black;
+  margin-top: 10px;
+}
+
+.clickedMovContainer {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (3fr)[6];
+      grid-template-columns: repeat(6, 3fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  color: #6db86d;
+}
+
+.clickedMovContainer img {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 10px;
+}
+
+.detailscontainer {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4, 1fr;
+      grid-template-rows: 4, 1fr;
+  margin-left: 30px;
+}
+
+.detailscontainer .modalContainer {
+  margin-top: 10px;
+  position: absolute;
+  height: 49vh;
+  width: 40vw;
+  background-color: whitesmoke;
+  color: black;
+  opacity: 1;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.detailscontainer .modalContainer .formContainer {
+  margin-top: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+  -ms-grid-column-align: center;
+      justify-self: center;
+  row-gap: 5px;
+}
+
+.detailscontainer .modalContainer .formContainer label {
+  margin-left: 5px;
+}
+
+.detailscontainer .modalContainer .formContainer label input {
+  width: 30vw;
+  margin-left: 5px;
+}
+
+.detailscontainer .modalContainer .formContainer .formSynopsis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detailscontainer .modalContainer .formContainer .formSynopsis textarea {
+  position: relative;
+  height: 20vh;
+  width: 30vw;
+}
+
+.detailscontainer .modalContainer .updateBtn {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.detailscontainer h1 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0;
+}
+
+.detailscontainer h5 {
+  margin: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  font-style: italic;
+}
+
+.detailscontainer h4 {
+  margin: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.detailscontainer h3 {
+  margin: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.plot {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  margin-top: 10px;
+}
+
+.backContainer {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.backContainer button {
+  margin-top: 10px;
+}
+
+.adminBtn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  row-gap: 10px;
+}
+
+.adminBtn .semantic.ui.red.button {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.adminBtn .semantic.ui.green.button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+/*# sourceMappingURL=clickedMovie.css.map */
